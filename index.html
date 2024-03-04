@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="reset.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="reset-webview.css" rel="stylesheet" type="text/css" />
+  <title>Better Seas</title>
+  <link rel="icon" href="img/betterseas_icon2 (1).jpeg">
+</head>
+
+<body>
+  <div class="navbar" id="top">
+    <ul>
+      <li><a href="#top">Home</a></li>
+      <li><a href="#EOS">About</a></li>
+      <li><a href="#Change">Make the Change</a></li>
+      <li><a href="#Support">Support the Seas</a></li>
+      <li ><button id="theme-button">Toggle Dark Mode</button></li>
+      <!-- Stretch Challenge: Drop Down -->
+    </ul>
+  </div>
+  <!--- Headings --->
+  <div class="header-container">
+    <div class="video-background">
+      <video autoplay muted loop id="background-video">
+          <source src="vid/betterseasvid.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="title-container">
+      <h1 id="title">Better Seas</h1>
+      <h3 id="subtitle">Dive into a Sustainable Future</h3>
+    </div>
+  </div>
+  
+
+  <!--- About --->
+  <h2 id="EOS" class="revealable">Embracing Ocean Sustainability</h2>
+  <div class="container" class="revealable">
+    <div id="topic-description" class="revealable">
+      <p>Ocean sustainability is crucial for the well-being of our planet and future generations. The oceans cover over 70% of the Earth's surface, playing a fundamental role in regulating our climate, providing food and livelihoods for millions of people, and supporting diverse ecosystems teeming with life. However, they face a myriad of threats, including overfishing, pollution, habitat destruction, and climate change. Ensuring the sustainability of our oceans is imperative in fostering new and continuing life, both inside and outside of the water.</p>
+    </div>
+    <div id="image-container" class="revealable">
+      <img src="img/overfishing.jpeg" alt="Fisherman overfishing">
+      <img src="img/ocean_pollution.jpeg" alt="Sea turtule surrounded by plastic">
+      <img src="img/dying_reef.png" alt="Before and after of coral reef dying">
+    </div>
+  </div>
+
+  <!--- Impact --->
+  <h2 class="revealable">Our Ocean's Decline in Real-Time</h2>
+  <div class="container" class="revealable">
+    <div id="counter-left" class="revealable">
+      <iframe title='Tons of plastic waste dumped in oceans' src='https://www.theworldcounts.com/embeds/counters/109?&color=white&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=30' style='border: none' height='250' width='500'>
+      </iframe>
+    </div>
+    <div id="counter-right" class="revealable">
+      <iframe title='Percent coral reefs left' src='https://www.theworldcounts.com/embeds/counters/1?&color=white&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=30' style='border: none' height='250' width='500'></iframe>
+    </div>
+  </div>
+
+  <h2 id="Change" class="revealable">Ways You Can Save the Seas</h2>
+  <div id="save-seas-list" class="container" class="revealable">
+    <ul class="revealable">
+      <li>Reduce Single-Use Plastic</li>
+      <li>Dispose of Waste Properly</li>
+      <li>Choose Sustainable Seafood</li>
+      <li>Conserve Water</li>
+      <li>Choose Eco-Friendly Products</li>
+      <li>Respect Marine Life</li>
+      <li>Support Marine Conservation Organizations</li>
+    </ul>
+  </div>
+
+  <div id="Support" class="petition" id="petition" class="revealable">
+
+    <h2 class="revealable">Sign Our Petition 📢</h2>
+    <div class="petition-container" class="revealable">
+
+      <div class="petition-para" class="revealable">
+        <p class="revealable">Ocean sustainability is a matter of paramount importance for the well-being of our planet and future generations. Our oceans provide us with invaluable resources, from food and livelihoods to climate regulation and biodiversity. However, the escalating threats of overfishing, pollution, and climate change have put these ecosystems at risk. By signing this petition, you are taking a stand for responsible and ethical practices in ocean management. We urge governments, industries, and individuals to collaborate in protecting our oceans through sustainable fishing, reducing plastic waste, and mitigating climate change. Together, we can ensure the long-term health of our oceans, preserving their beauty, biodiversity, and the livelihoods of countless people who depend on them. Join us in safeguarding the blue heart of our planet for the benefit of current and future generations. Your signature can make a difference, and together, we can be stewards of the oceans, ensuring their sustainability and vitality for all.</p>
+      </div>
+
+      <div class="signatures" class = "revealable">
+        <p class="revealable">🖊️ Mariah from Upland supports bettering our seas.</p>
+        <p class="revealable">🖊️ Elijah from Ontario supports bettering our seas.</p>
+        <p class="revealable">🖊️ Elias from Hemet supports bettering our seas.</p>
+      </div>
+
+    </div>
+
+  <!--- Sign Petition Form --->
+  <form id="sign-petition" title="sign-petition">
+    <!-- inputs go here -->
+    <label for = "name"> Name: </label>
+    <input type = "text", id = "name", placeholder="Your Name">
+    <label for = "hometown"> Hometown: </label>
+    <input type = "text", id = "hometown", placeholder="Your Hometown">
+    <label for = "email"> Email: </label>
+    <input type = "text", id = "email", placeholder="Your Email">
+  </form>
+
+   <!--- Sign Now Button --->
+  <button id="sign-now-button">Sign Now</button>
+
+ </div>
+
+  <div id="thanks-modal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div id="modal-text-container">
+        <p id="thanks-modal-content">Thank you!</p>
+        <button id="modal-button">Close</button>
+      </div>
+      <div id="modal-image">
+        <img src="img/modal_wave.jpeg" alt="Wave crashing in sunset"> 
+      </div>
+    </div>
+
+  </div>
+
+<script src="index.js"></script>
+</body>
+
+</html>

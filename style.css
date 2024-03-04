@@ -1,0 +1,225 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #003755;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  padding: 200px 0;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container */
+}
+
+.title-container {
+    position: relative;
+    z-index: 1; /* Place the title above the video */
+}
+
+#title {
+  font-size: 150px;
+}
+
+#subtitle {
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 60px;
+  color: cyan;
+}
+
+p {
+  color: white;
+  font-size: 40px;
+}
+
+.container {
+  padding: 10px;
+  display: flex;
+  justify-content:center;
+}
+
+#topic-description {
+  margin-top: 60px;
+  margin-right: 200px;
+}
+
+#image-container img {
+  position: relative;
+  width: 500px;
+  height: 225px;
+  margin: 5px;
+}
+
+#counter-left {
+  margin-right: 100px;
+}
+
+#counter-right {
+  margin-left: 100px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: -2.3%;
+  z-index: 2;
+  background-color: white;
+}
+
+.navbar ul li {
+  float: left;
+  margin: 20px;
+}
+
+.navbar ul li a {
+  display: block;
+  color:black;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.petition-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+
+#sign-petition {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.petition-para {
+  width: 55%;
+  padding-right: 10px;
+}
+.petition-para p {
+  font-size: 30px;
+}
+
+.signatures {
+  width: 45%;
+  padding-right: 10px;
+}
+.signatures p {
+  font-size: 30px;
+}
+
+.error {
+  border-style: solid;
+  border-width: 2px;
+  border-color: red;
+  background:pink;
+}
+
+.revealable {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.revealable.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.modal {
+  display: none; /* hides the modal from view by default*/
+  position: fixed; /* keeps the modal in one place */
+  z-index: 2; /* positions the modal on top of all other elements on the screen */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black - other elements can still be seen */
+  flex-direction: column; /* these flexbox rules center the content on the screen */
+  align-items: center;
+  justify-content: center;
+}
+
+/* box that contains all the content and images */
+.modal-content {
+  background-color: lightsteelblue; /* update the colors and font sizes as you like */
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  display: flex; /* adds flexbox to center all items */
+  justify-content: center;
+  align-items: center;
+}
+
+#thanks-modal-content {
+  width: 20rem; /* sets a default width for the text container */
+}
+
+#modal-text-container {
+  display: flex; /* adds flexbox to center the text and buttons (stretch feature) */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#save-seas-list {
+  font-size: 50px;
+  color: white;
+}
+
+#save-seas-list li {
+  margin: 25px;
+}
+
+#sign-now-button {
+  margin: 20px auto;
+  display:flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+button {
+  color: #003775;
+}
+
+#modal-button {
+  font-size: 20px;
+}
